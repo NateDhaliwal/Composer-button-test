@@ -7,7 +7,7 @@ export default apiInitializer("0.11.1", (api) => {
       toolbarEvent.applySurround("**", "**");
     },
     icon: 'far-bold',
-    label: 'composer.bold_some_text',
+    label: 'hi there',
     shortcut: 'm',
     condition: (composer) => {
       return composer.editingPost;
