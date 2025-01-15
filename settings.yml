@@ -11,7 +11,7 @@ topic_group_button_label:
   default: "Click Me"
   client: true
 topic_group_button_allowed_group:
-  default: "trust_level_4"
+  default: "trust_level_0"
   client: true
 topic_group_button_icon:
   default: ""
