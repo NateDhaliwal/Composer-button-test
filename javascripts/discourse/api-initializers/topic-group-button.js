@@ -2,7 +2,17 @@ import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("0.11.1", (api) => {
   const currentUser = api.getCurrentUser();
-
+  api.addComposerToolbarPopupMenuOption({
+    action: (toolbarEvent) => {
+      toolbarEvent.applySurround("**", "**");
+    },
+    icon: 'far-bold',
+    label: 'composer.bold_some_text',
+    shortcut: 'm',
+    condition: (composer) => {
+      return composer.editingPost;
+    }
+  });
   api.registerTopicFooterButton({
     id: "discourse-topic-group-button",
     priority: 0,
