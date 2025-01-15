@@ -1,0 +1,13 @@
+<script type='text/discourse-plugin' version='2.0.0'>
+  api.addComposerToolbarPopupMenuOption({
+    action: (toolbarEvent) => {
+      toolbarEvent.applySurround("**", "**");
+    },
+      icon: 'far-bold',
+      label: 'composer.bold_some_text',
+      shortcut: 'm',
+      condition: (composer) => {
+        return composer.editingPost;
+      }
+    });
+</script>
