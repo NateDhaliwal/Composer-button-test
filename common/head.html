@@ -10,4 +10,8 @@
       return composer.editingPost;
     }
   });
+  
+  api.addUsernameSelectorDecorator(username => {
+    return `<span class="status">[is_away]</class>`;
+  });
 </script>
