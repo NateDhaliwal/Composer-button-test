@@ -5,7 +5,7 @@ export default apiInitializer("0.11.1", (api) => {
       action: (toolbarEvent) => {
         toolbarEvent.applySurround("**", "**");
       },
-      icon: 'far-bold',
+      icon: 'eye',
       label: 'composer.bold_some_text',
       shortcut: 'm',
       condition: (composer) => {
